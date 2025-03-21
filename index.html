@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VikTech - The Ultimate Learning Hub for Engineering Minds. Build, Innovate & Code Your Future!">
+    <meta name="keywords" content="VikTech, Engineering, Coding, Development, Technology, Programming">
+    <meta name="author" content="Vikas Das">
+    <title>VikTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="IMG/LOGOWHITE.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero"><img src="IMG/LOGO.png" alt=""></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#compiler">Compiler</a></li>
+                <li> <a href="#testimonials">Testimonials</a></li>
+                <li> <a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button onclick="location.href='#contact'" class="login">Log In</button>
+                <button onclick="location.href='#contact'" class="signup">Sign Up</button>
+            </div>
+            <div class="menu-icon" onclick="openNav()">☰</div>
+        </nav>
+    </header>
+
+    <div class="side-nav" id="sideNav">
+        <span class="close-btn" onclick="closeNav()">&times;</span>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#compiler">Compiler</a></li>
+            <li> <a href="#testimonials">Testimonials</a></li>
+            <li> <a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>BUILD, INNOVATE & CODE YOUR FUTURE!</h1>
+            <p>The Ultimate Learning Hub for Engineering Minds.<br> Where Knowledge Meets Innovation.</p>
+
+            <div class="hero-image">
+                <img src="IMG/MAIN.png" alt="Programming Environment">
+            </div>
+
+            <div class="hero-buttons">
+                <button class="about" onclick="location.href='#resources'">Explore Now</button>
+                <button class="know-more" onclick="location.href='#know-more'">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Our mission is to empower programmers of all levels with an intuitive and feature-rich coding space. Whether
+            you're
+            a student, a professional, or an enthusiast, Prog World is here to help you achieve your coding goals!</p>
+
+        <div class="founder">
+            <img src="IMG/VIKAS DAS PIC.jpg" alt="Founder">
+            <p id="founder-p"><strong>Vikas Das</strong> <br> Founder & CEO</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/vikas-das-1271532a3/" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Vikas4Das" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <p id="about-p">I'm passionate software developer with over 5 years of experience in full-stack development,
+                AI, and
+                cloud computing.</p>
+
+        </div>
+    </section>
+
+
+
+    <section id="know-more" class="know-more-section">
+        <h2>Know More</h2>
+        <div class="know-more-content">
+            <p>Welcome to VikTech, the ultimate destination for programmers! We offer an advanced, user-friendly coding
+                environment
+                where developers can write, compile, and debug their code efficiently. Our platform is designed to
+                support multiple
+                programming languages and provides collaboration tools to work on projects seamlessly.</p>
+
+            <p>VikTech is more than just a coding platform – it's a community for programmers worldwide. Our key
+                features include:</p>
+            <ul>
+                <li>⚡ Online IDE with real-time collaboration</li>
+                <li>🔍 Advanced debugging tools</li>
+                <li>📁 Cloud-based project storage</li>
+                <li>📚 Access to coding tutorials & documentation</li>
+                <li>🌍 Community forums for discussions & networking</li>
+            </ul>
+            <a class="know-highlight-link" href="https://chat.whatsapp.com/DoAtQL3UaIUEI3G3SnsyA0" target="_blank">
+                <p id="know-highlight">
+                    ✅💥🌐 Join thousands of developers and experience the future of programming with VikTech 🌐💥✅
+            
+                </p>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="resources" class="resources">
+        <h2>Programming Resources</h2>
+        <div class="resources-container">
+            <div class="resource-box">
+                <h3>Python</h3>
+                <p>A powerful and beginner-friendly programming language.</p>
+                <a href="Note/Python HandWritten Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+python" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('PYTHON')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Java</h3>
+                <p>One of the most popular languages for web and Android development.</p>
+                <a href="Note/JAVA HANDWRITTEN NOTES.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+java" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('JAVA')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>C</h3>
+                <p>Low-level programming language used in system development.</p>
+                <a href="Note/C.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+c" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('C')">Get Certificate</button>
+            </div>
+            <div class="resource-box">
+                <h3>C++</h3>
+                <p>Extension of C, widely used in game development.</p>
+                <a href="Note/cpp full course.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+c%2B%2B" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('C++')">Get Certificate</button>
+            </div>
+            <div class="resource-box">
+                <h3>C#</h3>
+                <p>Developed by Microsoft, widely used in Unity game development.</p><a href="Note/CSharpNotesForProfessionals.pdf" target="_blank"
+                    class="download-btn">Note</a><a href="https://www.youtube.com/results?search_query=learn+c%23"
+                    target="_blank" class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('C#')">Get Certificate</button>
+            </div>
+            <div class="resource-box">
+                <h3>PHP</h3>
+                <p>Server-side scripting language used for web development.</p><a href="Note/PHP(WT) Lecture Notes.pdf"
+                    target="_blank" class="download-btn">Note</a><a
+                    href="https://www.youtube.com/results?search_query=learn+php" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('PHP')">Get Certificate</button>
+            </div>
+    
+            <div class="resource-box">
+                <h3>Go</h3>
+                <p>Developed by Google, used for scalable cloud applications.</p><a href="Note/gobook.pdf"
+                    target="_blank" class="download-btn">Note</a><a
+                    href="https://www.youtube.com/results?search_query=learn+golang" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('GO')">Get Certificate</button>
+            </div>
+            <div class="resource-box">
+                <h3>R</h3>
+                <p>Statistical computing and graphics programming language.</p><a
+                    href="Note/2 IT - UNIT-1 Start Learning R.pdf" target="_blank" class="download-btn">Note</a><a
+                    href="https://www.youtube.com/results?search_query=learn+r+programming" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('R')">Get Certificate</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources">
+        <h2>Web Development Resources</h2>
+        <div class="resources-container">
+            <div class="resource-box">
+                <h3>HTML</h3>
+                <p>Standard markup language for creating web pages.</p>
+                <a href="Note/HTML_Complete_Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+html" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('HTML')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>CSS</h3>
+                <p>Stylesheet language for designing web pages.</p>
+                <a href="Note/CSS_Complete_Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+css" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('CSS')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>JavaScript</h3>
+                <p>Programming language for adding interactivity to websites.</p>
+                <a href="Note/JavaScript-Handwritten-Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+javascript" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('JAVASCRIPT')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Tailwind CSS</h3>
+                <p>Utility-first CSS framework for modern web design.</p>
+                <a href="Note/taking-flight-tailwind-css.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+tailwind+css" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Tailwind CSS')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Bootstrap</h3>
+                <p>Popular CSS framework for responsive web design.</p>
+                <a href="Note/Bootstrap-tutorial.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+bootstrap" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Bootstrap')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>React</h3>
+                <p>JavaScript library for building user interfaces.</p>
+                <a href="Note/React-Handwritten-notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+react" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('React')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Angular</h3>
+                <p>Google’s TypeScript-based web application framework.</p>
+                <a href="Note/angular-js-notes-for-professionals-100-pages-of-professional-hints-and-tricks_compress.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+angular" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Angular')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Vue.js</h3>
+                <p>Progressive JavaScript framework for building UIs.</p>
+                <a href="Note/vuejs_tutorial.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+vue.js" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Vue.js')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Node.js</h3>
+                <p>JavaScript runtime for building scalable server-side apps.</p>
+                <a href="Note/node-handbook.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+node.js" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Node.js')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Express.js</h3>
+                <p>Fast, minimalist web framework for Node.js.</p>
+                <a href="Note/Express.js-Guide.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+express.js" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Express.js')">Get Certificate</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="resources">
+        <h2>App Development Resources</h2>
+        <div class="resources-container">
+            <div class="resource-box">
+                <h3>Android Development</h3>
+                <p>Develop native Android apps using Java and Kotlin.</p>
+                <a href="Note/AndTutorials-3_1-CC.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+android+development" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Android Development')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Kotlin</h3>
+                <p>Modern programming language for Android app development.</p>
+                <a href="Note/KotlinNotesForProfessionals.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+kotlin" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Kotlin')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Swift</h3>
+                <p>Powerful programming language for iOS app development.</p>
+                <a href="Note/SwiftLanguage.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+swift" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Swift')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Flutter</h3>
+                <p>UI toolkit for building natively compiled applications.</p>
+                <a href="Note/flutter_tutorial.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+flutter" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Flutter')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>React Native</h3>
+                <p>Build mobile apps using JavaScript and React.</p>
+                <a href="Note/react_native_tutorial.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+react+native" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('React Native')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Jetpack Compose</h3>
+                <p>Modern Android UI toolkit for native development.</p>
+                <a href="Note/JetpackCompose1.5EssentialsPreview_optimized.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+jetpack+compose" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Jetpack Compose')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Firebase</h3>
+                <p>Backend services for app authentication and database.</p>
+                <a href="Note/Mai_Tram.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+firebase" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Firebase')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Xamarin</h3>
+                <p>Cross-platform mobile development framework using C#.</p>
+                <a href="Note/Building.Xamarin.Forms.Mobile.Apps.Using.XAML.www.EBooksWorld.ir.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+xamarin" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Xamarin')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Dart</h3>
+                <p>Programming language optimized for Flutter development.</p>
+                <a href="Note/DartLangSpecDraft.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+dart" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Dart')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Ionic</h3>
+                <p>Framework for hybrid mobile app development.</p>
+                <a href="Note/Learning_Ionic_2nd.www.EBooksWorld.ir.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=learn+ionic" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Ionic')">Get Certificate</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="resources">
+        <h2>Networking Resources</h2>
+        <div class="resources-container">
+
+            <div class="resource-box">
+                <h3>Computer Networks</h3>
+                <p>Understand the fundamentals of networking and protocols.</p>
+                <a href="Note/CN.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=computer+networks+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Computer Network')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Computer Organization</h3>
+                <p>Learn about the architecture, memory systems, and processing units.</p>
+                <a href="Note/R22_II_I_COMPUTER ORGANIZATION AND ARCHITECTURE.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=computer+organization+tutorial" target="_blank" class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Computer Organization')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>CCNA (Cisco)</h3>
+                <p>Learn Cisco networking and prepare for CCNA certification.</p>
+                <a href="Note/Ahmed Nabil (CCNA).pdf"
+                    target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=ccna+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('CCNA(Cisco)')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Network Security</h3>
+                <p>Learn about firewalls, VPNs, and security protocols.</p>
+                <a href="Note/NS.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=network+security+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Network Security')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Cloud Networking</h3>
+                <p>Explore cloud-based networking with AWS, Azure, and GCP.</p>
+                <a href="Note/Network_Basics_in_Cloud_Computing.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=cloud+networking+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Cloud Networking')">Get
+                    Certificate</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="resources">
+        <h2>General Computer Science Knowledge</h2>
+        <div class="resources-container">
+
+            <div class="resource-box">
+                <h3>GitHub</h3>
+                <p>Learn version control, repositories, branching, and collaboration.</p>
+                <a href="Note/git-cheat-sheet-education.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=GitHub+tutorial" target="_blank" class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('GitHub')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Data Structures</h3>
+                <p>Learn about arrays, linked lists, trees, graphs, and more.</p>
+                <a href="Note/DSA-Handwritten-Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=data+structures+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Data Structures')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Algorithms</h3>
+                <p>Master sorting, searching, recursion, and dynamic programming.</p>
+                <a href="Note/Design and Analysis Algorithms.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=algorithms+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Algorithms')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Operating Systems</h3>
+                <p>Understand processes, memory management, and file systems.</p>
+                <a href="Note/Operating-system-Handwritten-Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=operating+systems+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Operating Systems')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Databases</h3>
+                <p>Learn SQL, NoSQL, normalization, indexing, and transactions.</p>
+                <a href="Note/SQL Notes.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=database+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Databases')">Get Certificate</button>
+            </div>
+
+
+            <div class="resource-box">
+                <h3>Cyber Security</h3>
+                <p>Understand encryption, malware, firewalls, and cyber threats.</p>
+                <a href="Note/Cyber_Security.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=cyber+security+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Cyber Security')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>AI & Machine Learning</h3>
+                <p>Learn neural networks, deep learning, and ML models.</p>
+                <a href="Note/AI & ML DIGITAL NOTES.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=machine+learning+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('AI &Machine Learning')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Cloud Computing</h3>
+                <p>Understand AWS, Azure, Google Cloud, and cloud architectures.</p>
+                <a href="Note/(R17A0527) Cloud Computing Digital Notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=cloud+computing+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Cloud Computing')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Software Engineering</h3>
+                <p>Master SDLC, Agile, DevOps, and software design patterns.</p>
+                <a href="Note/SE Notes Complete.pdf" target="_blank"
+                    class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=software+engineering+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Software Engineering')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Blockchain</h3>
+                <p>Learn about smart contracts, Bitcoin, and Ethereum.</p>
+                <a href="Note/Block-Chain-notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=blockchain+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Blockchain')">Get Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Computer Architecture</h3>
+                <p>Understand CPU design, memory hierarchy, and pipelines.</p>
+                <a href="Note/computer-systems-Architecture.pdf"
+                    target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=computer+architecture+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Computer Architecture')">Get
+                    Certificate</button>
+            </div>
+
+            <div class="resource-box">
+                <h3>Big Data & Analytics</h3>
+                <p>Explore Hadoop, Spark, and data analytics techniques.</p>
+                <a href="Note/(R17A0528 ) Big Data Analytics Digital notes.pdf" target="_blank" class="download-btn">Note</a>
+                <a href="https://www.youtube.com/results?search_query=big+data+analytics+tutorial" target="_blank"
+                    class="youtube-btn">Video</a>
+                <button class="certificate-btn" onclick="openCertificateForm('Big Data & Analytics')">Get
+                    Certificate</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificateForm()">&times;</span>
+            <h2>Generate Your Certificate</h2>
+            <label for="studentName">Your Name:</label>
+            <input type="text" id="studentName" placeholder="Enter your name" required>
+
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" readonly>
+
+            <button onclick="generateCertificate()">Download Certificate</button>
+        </div>
+    </div>
+
+    <canvas id="certificateCanvas" style="display:none;"></canvas>
+
+
+    <section id="compiler" class="code-editor-section">
+        <h2 class="compiler-head">Compiler</h2>
+
+        <label for="language">Choose Language:</label>
+        <select id="language" onchange="toggleEditor()">
+            <option value="html">HTML, CSS, JS</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+        </select>
+
+        <div id="frontend-editors">
+            <div class="editor-container">
+                <div class="editor">
+                    <h3>HTML</h3>
+                    <textarea id="html-code" oninput="updateOutput()"></textarea>
+                </div>
+                <div class="editor">
+                    <h3>CSS</h3>
+                    <textarea id="css-code" oninput="updateOutput()"></textarea>
+                </div>
+                <div class="editor">
+                    <h3>JavaScript</h3>
+                    <textarea id="js-code" oninput="updateOutput()"></textarea>
+                </div>
+            </div>
+            <h3>Output</h3>
+            <iframe id="output"></iframe>
+        </div>
+
+        <div id="backend-editor" style="display: none;">
+            <textarea id="code-input" placeholder="Write your code here..."></textarea>
+            <button class="run" onclick="runCode()">Run Code</button>
+            <h3>Output</h3>
+            <pre id="code-output"></pre>
+        </div>
+    </section>
+
+
+    <section id="testimonials" class="testimonials">
+        <h2>What People Say About Us</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1">
+                <h3>Pankaj</h3>
+                <p>"This platform is amazing! It has helped me improve my programming skills and learn new technologies
+                    easily."</p>
+            </div>
+
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2">
+                <h3>Ritu</h3>
+                <p>"The resources provided here are top-notch. The online compiler and tutorials make learning so much
+                    easier!"</p>
+            </div>
+
+            <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="User 3">
+                <h3>Akash</h3>
+                <p>"A fantastic website for programmers! The UI is clean, and the community support is incredible. I
+                    love this "</p>
+            </div>
+        </div>
+
+        <button class="prev" onclick="prevTestimonial()">&#10094;</button>
+        <button class="next" onclick="nextTestimonial()">&#10095;</button>
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="bc332ff0-7681-4316-b6bd-3e9cfe8ed0af">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>VikTech</h2>
+                <p>Empowering developers with resources, tutorials, and a strong coding community.</p>
+            </div>
+
+            <div class="contact-info1">
+                <h2>Contact Us</h2>
+                <div class="info-box1">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:vikas0404das08@gmail.com">vikas0404das08@gmail.com</a></p>
+                </div>
+
+                <div class="info-box1">
+                    <i class="fas fa-phone"></i>
+                    <p><a href="tel:+917488768685">+91 7488768685</a></p>
+                </div>
+
+                <div class="info-box1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><a href="https://www.google.com/search?q=jamshedpur+jhar&oq=
+                        jamshedpur+jhar&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM3NzVqMGoxqAIIsAIB8QVQCLk
+                        TzIXKxw&sourceid=chrome&ie=UTF-8#fpr=r">jamshedpur,Jharkhand</a></p>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vikas-das-1271532a3/" target="_blank" class="linkedin"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Vikas4Das" target="_blank" class="github"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://x.com/Vikas4das" target="_blank" class="twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/vikas4das/" target="_blank" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@vikasvibes04" target="_blank" class="youtube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VikTech. All Rights Reserved. | Designed by Vikas Das</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
